@@ -1,0 +1,22 @@
+section
+{
+
+      background-color: #2C3E50;
+
+}
+.copyright
+{
+  background-color: #1A252F;
+  font-size: 16px;
+}
+p
+{
+  font-size: 10px;
+}
+.icon
+{
+  font-size: x-small;
+  border: white 1px solid;
+  padding: 7px;
+  border-radius: 50%;
+}

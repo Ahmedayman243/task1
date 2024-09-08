@@ -1,0 +1,33 @@
+
+
+<div class="container">
+  <div class="row gy-3 mb-5">
+
+      @for( product of list ; track product.id  )
+      {
+        <div  class="col-md-3 ">
+        <div class="card" >
+          <img [src]="product.image" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{product.name }}</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{product.price}}$</li>
+            <li class="list-group-item">{{product.cat}}</li>
+
+          </ul>
+        </div>
+      </div>
+      }
+
+
+  </div>
+
+</div>
+<h1 #h1 class="text-black text-center mb-5 mt-5">recommended products</h1>
+
+
+@defer( on viewport(h1)){
+  <app-recommended-products></app-recommended-products>
+}
+

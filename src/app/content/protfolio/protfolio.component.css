@@ -1,0 +1,27 @@
+.pro
+{
+
+    position: relative;
+}
+
+.pro-content
+{
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(26, 188, 156,0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition:opacity 1s;
+    font-size: 150px;
+    
+
+}
+.pro:hover .pro-content
+{
+    opacity: 1;
+}
